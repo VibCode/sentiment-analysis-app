@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analysis App</title>
+</head>
+<body>
+    <h2>Enter a review to analyze:</h2>
+    <form method="post" action="/predict">
+        <textarea name="message" rows="4" cols="50" placeholder="Type your review here..."></textarea><br><br>
+        <input type="submit" value="Analyze">
+    </form>
+    {% if prediction %}
+        <h3>Prediction: {{ prediction }}</h3>
+        <p>Input: {{ message }}</p>
+    {% endif %}
+</body>
+</html>
