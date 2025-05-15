@@ -1,3 +1,6 @@
+# sentiment-analysis-app
+Flask app for sentiment analysis
+
 # Sentiment Analysis Web App
 
 A beginner-friendly project using Python, Flask, and scikit-learn.
